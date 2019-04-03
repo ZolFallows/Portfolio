@@ -6,7 +6,7 @@ html {
     margin: 0;
     position: relative;
     background: white;
-    font-family: Julius+Sans+One, Cardo, Arial, Helvetica, sans-serif
+    font-family: 'Josefin Sans', 'Roboto', 'Cardo', Arial, Helvetica, sans-serif
 }
 
 
@@ -87,8 +87,8 @@ footer a:hover, footer a:focus {
 }
 
 #landing {
-    padding-top: 10vh;
-    min-height: 100vh;
+    padding-top: 15vh;
+    min-height: 90vh;
 }
 
 h1, 
@@ -132,34 +132,33 @@ h3 {
     transition: 1s;
 }
 
-hr.style-two {
-    width: 50vw;
-    margin: 0;
-    border: 0;
-    height: 1.5px;
-    background-image: linear-gradient(to right, rgba(131, 131, 131, 0.534), rgba(90, 90, 90, 0.75), rgba(83, 83, 83, 0));
-}
 
 #projects {
     text-align: center;
     padding: 40px 0;
 }
 
-/* .project {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid rgba(218, 218, 218, 0.75)
-} */
 
 .project {
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
+    padding-bottom: 10px;
 }
 
-.project p, 
-.project button,
-.project div {
+.project > img {
+    max-width: 75%;
+    border-radius: 3px;
+    box-shadow: 3px 3px 1px 0px #e2e2e2;
+} 
+
+.project .description {
     text-align: left;
+    color: #8a8a8a;
+}
+
+
+.project > .centre {
+    text-align: center;
 }
 
 p {
@@ -168,7 +167,8 @@ p {
 }
 
 .project div {
-    word-spacing: 1px;
+    /* word-spacing: 1px; */
+    color: #8a8a8a;
 }
 .project a{
     text-decoration: none;
@@ -176,9 +176,21 @@ p {
 }
 
 .project a:hover, .project a:focus {
-    text-decoration: underline;
-    transition: 0.5s;
+    /* text-decoration: underline; */
+    letter-spacing: 1px;
+    color: white;
+    transition: 0.25s;
+    background-size: 100% 100%;
 }
+
+.project a {
+    background-image: linear-gradient(120deg, #cecece 0%, #1d1d1d 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.1rem;
+    padding: 2px;
+    background-position: 0px 100%;
+    transition: background-size 0.25s ease-in;
+  }
 
   /* =========================Tablets and Ipads========================== */
   
@@ -219,7 +231,7 @@ p {
     }
 
     .project img {
-        max-width: 60vw;
+        max-width: 80%;
     }
     
     h1 {
@@ -253,7 +265,7 @@ p {
     }
 
     .project img {
-        max-width: 70vw;
+        max-width: 90%;
     }
 
     #nav-wrapper div a {
