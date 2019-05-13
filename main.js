@@ -13,4 +13,10 @@ $(function() {
       scrollTop: $('#landing').offset().top
     }, 1000);
   });
+
+  $('#to-about').on('click', () => {
+    $('html, body').animate({
+      scrollTop: $('#bio').offset().top
+    }, 1000);
+  });
 });

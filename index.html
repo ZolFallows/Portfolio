@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Zol Fallows</title>
+    <title>Zol's portfolio</title>
     <!-- styles -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Roboto:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700|Josefin+Sans:400,600,700|Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,13 +15,14 @@
     <nav role="navigation">
         <div id="nav-wrapper">
             <div id="logo">
-                <a href="https://docs.google.com/document/d/1_ZWMZxvXSk7ONUQiCaTnJP7hrWmsqR6U7CaPv6H6FZI/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a id="to-about">About</a>
                 <a id="to-projects">Projects</a>
             </div>
-            <div>
+            <!-- <div>
                 <img src="images/ninja (1).png" alt="ninja" id="to-landing-page">
-            </div>
+            </div> -->
             <div id="links">
+                <a href="https://docs.google.com/document/d/1_ZWMZxvXSk7ONUQiCaTnJP7hrWmsqR6U7CaPv6H6FZI/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
                 <a href="https://github.com/ZolFallows" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="https://www.linkedin.com/in/zoljargal-fallows-5b630a107/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
@@ -31,66 +32,121 @@
     <main role="main">
         <section id="landing">
             <div id="landing-wrapper">
-                <h1>Zoljargal Fallows</h1>
-                <h3>Hello, My name is Zol. I am full stack developer who based in Northampton, UK.</h3>
-                <div id="bio">
-                    <p>
-                        I believe that curiosity is my number one personality characteristic, which has led me to coding and got me hooked on it. I enjoy taking on challenges that come with every project, and ultimately learn and enhance myself as a developer.
-                    </p>
-                    <p>
-                        When I am not coding, I love working out at the local gym, releasing my inner monkey at the rock climbing centre or just hanging out with my family and friends. 
-                    </p>
-                </div>
+                <h1>Hey,</h1>
+                <h1>I'm Zoljargal Fallows</h1>
+                <h3>London based full stack developer.</h3>
             </div>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
             <div class="project">
-                <h3>ThinkForum</h3>
-                <img src="images/thinkforum.png" alt="thinkforum-app"> 
-                 <p class="description">ThinkForum is a full stack React application for exchanging ideas and views on any particular issues through form of posted messages/discussions.</p>
-                 <div class="centre">
-                     <p>
-                         <span>HTML</span> &bull; 
-                         <span>CSS</span> &bull;  
-                         <span>React</span> &bull; 
-                         <span>Context API</span> &bull; 
-                         <span>Node.js</span> &bull; 
-                         <span>PostgreSQL</span>
+                <div class="grid-50 description">
+                    <p><a href="https://spendful.now.sh/" target="_blank" rel="noopener noreferrer">Spendful</a> is a full stack React application developed for you to reach your financial goals by tracking every dollar you spend and earn. This app allows you to add all of your incomes and expenses and visualize them through convenient charts and graphs. </p>
+                    <hr/>
+                    <div class="centre">
+                        <p>Front-end: HTML, CSS, React, Context API, Moment, Graphjs</p>
+                        <p>Back-end: Node, Express, Knex, PostgreSQL, RRule, Luxon</p>
+                    </div>
+                    <p class="centre">
+                        <a href="#" target="_blank" rel="noopener noreferrer">Client</a> 
+                        <span class="seperator"> | </span> 
+                        <a href="#" target="_blank" rel="noopener noreferrer">Server</a>
                     </p>
-                 </div>
-                <p class="centre">
-                    <a href="https://thinkforum.now.sh/" target="_blank" rel="noopener noreferrer">Live</a> | 
-                    <a href="https://github.com/ZolFallows/thinkforum-client" target="_blank" rel="noopener noreferrer">Client</a> | 
-                    <a href="https://github.com/ZolFallows/thinkforum-client" target="_blank" rel="noopener noreferrer">Server</a>
-                </p>
+                </div>  
+                <div class="grid-50">
+                    <img src="images/spendful.png" alt="Spendful"> 
+                </div>
             </div>
             <div class="project">
-                <h3>LFC Quiz App</h3>
-                <img src="images/quizapp.png" alt="quiz-app"> 
-                 <p class="description">An interactive quiz app, designed for Liverpool FC supporters to test their knowledge on the history of everything at Anfield.</p>
-                 <div class="centre">
-                     <p>
-                        <span>HTML</span> &bull; 
-                        <span>CSS</span> &bull; 
-                        <span>JavaScript</span> &bull; 
-                        <span>jQuery</span>
+                <div class="grid-50 description">
+                    <p><a href="https://ripetizione.now.sh/" target="_blank" rel="noopener noreferrer">Ripetizione spaziale</a> is a full stack React application developed to improve your learning potential through utilising linked-list data structure with Postgresql. The algorithm updates the memory location to each corresponding word with the user guess. The frequency of words to be displayed are depends on their memory value. To put it simply, the words you get correct show up less frequently since you don’t need as much practice!</p>
+                    <hr/>
+                    <div class="centre">
+                        <p>Front-end: HTML, CSS, React, Context API</p>
+                        <p>Back-end: Node, Express, Knex, PostgreSQL, Linked-list data structure</p>
+                    </div>
+                    <p class="centre">
+                        <a href="https://github.com/ZolFallows/spaced-repetition-client-zol-geordie" target="_blank" rel="noopener noreferrer">Client</a> 
+                        <span class="seperator"> | </span> 
+                        <a href="https://github.com/ZolFallows/spaced-repetition-server-zol-geordie" target="_blank" rel="noopener noreferrer">Server</a>
                     </p>
-                 </div>
-                <p class="centre">
-                    <a href="https://zolfallows.github.io/quiz.html" target="_blank" rel="noopener noreferrer">Live</a> | 
-                    <a href="https://github.com/ZolFallows/lfc-quiz-app" target="_blank" rel="noopener noreferrer">Code</a>
-                </p>
+                </div>  
+                <div class="grid-50">
+                    <img src="images/spaced-repetition.png" alt="Ripetizione spaziale"> 
+                </div>
+            </div>
+            <div class="project">
+                <div class="grid-50">
+                    <img src="images/thinkforum.png" alt="thinkforum-app"> 
+                </div>
+                <div class="grid-50 description">
+                    <p><a href="https://thinkforum.now.sh/" target="_blank" rel="noopener noreferrer">ThinkForum</a> is a full stack React application for exchanging ideas and views on any particular issues through form of posted messages/discussions.</p>
+                    <hr/>
+                    <div class="centre">
+                        <p>Front-end: HTML, CSS, React, Context API</p>
+                        <p>Back-end: Node, Express, Knex, PostgreSQL</p>
+                    </div>
+                    <p class="centre">
+                        <a href="https://github.com/ZolFallows/thinkforum-client" target="_blank" rel="noopener noreferrer">Client</a> 
+                        <span class="seperator"> | </span> 
+                        <a href="https://github.com/ZolFallows/thinkforum-server" target="_blank" rel="noopener noreferrer">Server</a>
+                    </p>
+                </div>  
+            </div>
+            <div class="project">
+                <div class="grid-50 description">
+                    <p><a href="https://zolfallows.github.io/quiz.html" target="_blank" rel="noopener noreferrer">LFC Quiz App</a> is a simple interactive app, designed for Liverpool FC supporters to test their knowledge on the history of everything at Anfield.</p>
+                    <hr/>
+                    <div class="centre">
+                        <p>Front-end: HTML, CSS, JavaScript, jQuery</p>
+                    </div>
+                    <p class="centre">
+                        <a href="https://github.com/ZolFallows/lfc-quiz-app" target="_blank" rel="noopener noreferrer">Client</a>
+                    </p>
+                </div>
+                <div class="grid-50">
+                   <img src="images/quizapp.png" alt="quiz-app">  
+                </div>
             </div>
         </section>   
+
+        <section id="about">
+            <div class="text-wrapper">
+                <div id="bio">
+                        <h2>About me</h2>
+                            <p>
+                                I believe that curiosity is my number one personality characteristic, which has led me to coding and got me hooked on it. I enjoy taking on challenges that come with every project, and ultimately learn and enhance myself as a developer.
+                            </p>
+                            <br/>
+                            <p>
+                                When I am not coding, I love working out at the local gym, releasing my inner monkey at the rock climbing centre or just hanging out with my family and friends. 
+                            </p>
+                        <!-- </div> -->
+
+                </div>
+                <hr/>
+                <div id='contact'>
+                        
+                        <h2>Contact Information</h2>
+                        <!-- <div class="text-wrapper"> -->
+                            <p>If you would like to talk more, feel free to reach out to me!</p>
+                            <p>Email: <a href="mailto:zol.fallows@hotmail.com">zol.fallows@hotmail.com</a></p>
+                            <p>Phone: +447860836815</p>
+                            <p>Check out my code source on <a href="https://github.com/ZolFallows" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                            <p>View my <a href="https://www.linkedin.com/in/zoljargal-fallows-5b630a107/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        </div>
+                            
+
+                        
+                        <div><span id="to-landing-page" class="scroll-top">&#94;</span></div>
+                </div>
+        </section>
     </main>
     
     
     <footer role="contentinfo">
-        <p>You can contact me at 
-            <a href="mailto:zol.fallows@hotmail.com">zol.fallows@hotmail.com</a>
-        </p>
+        <p>&#9400; Zol Fallows 2019</p>
     </footer>
     
     <script
