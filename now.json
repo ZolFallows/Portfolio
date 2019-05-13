@@ -1,28 +1,3 @@
 {
-  "version": 2,
-  "name": "zoljargal",
-  "alias": "zoljargal", 
-  "routes": 
-    [
-      {
-        "src": "^/static/(.*)",
-        "dest": "/static/$1"
-      },
-      {
-        "src": "^/favicon.ico$",
-        "dest": "/favicon.ico"
-      },
-      {
-        "src": "^/manifest.json$",
-        "dest": "/manifest.json"
-      },
-      {
-        "src": "^/site.webmanifest.json$",
-        "dest": "/site.webmanifest.json"
-      },
-      {
-        "src": ".*",
-        "dest": "/index.html"
-      }
-    ]
+  "name": "zoljargal"
 }
