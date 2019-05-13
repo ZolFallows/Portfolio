@@ -7,11 +7,7 @@
 html {
     position: relative;
     background: white;
-<<<<<<< HEAD
-    font-family: 'Josefin Sans', 'Roboto', 'Cardo', Arial, Helvetica, sans-serif
-=======
     font-family: 'Fira Sans', 'Roboto', 'Cardo', Arial, Helvetica, sans-serif
->>>>>>> 9442eee86f41221211bfd40d0d8c25db53cd5c81
 }
 
 body{
@@ -92,15 +88,6 @@ footer a:hover, footer a:focus {
 } 
 
 #landing {
-<<<<<<< HEAD
-    padding-top: 15vh;
-    min-height: 90vh;
-}
-
-h1, 
-h3 {
-    text-align: center;
-=======
     padding-top: 33vh;
     color: #ffffff;
     min-height: 100vh;
@@ -109,7 +96,6 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     text-shadow: 0 0 0.1em #000, 0 0 0.1em #000;
->>>>>>> 9442eee86f41221211bfd40d0d8c25db53cd5c81
 }
 
 h1 {
@@ -143,17 +129,6 @@ p {
     width: fit-content;
 }
  
-<<<<<<< HEAD
-#logo a:hover, #logo a:focus,
-#links a:hover, #links a:focus {
-    background: #ddd;
-    color: #0f0e0e;
-    transition: 1s;
-}
-
-
-=======
->>>>>>> 9442eee86f41221211bfd40d0d8c25db53cd5c81
 #projects {
     text-align: center;
     padding: 40px 0;
@@ -225,7 +200,6 @@ p {
     width: 600px;
     min-height: 100vh;
     margin: 0 auto;
-    padding-bottom: 10px;
 }
 
 
@@ -247,31 +221,29 @@ p {
     font-weight: 500;
 }
 
-.project div {
-    /* word-spacing: 1px; */
-    color: #8a8a8a;
+#bio, #contact {
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px 0;
 }
 
 #bio p, #contact p {
     font-weight: 500;
 }
 
-.project a:hover, .project a:focus {
-    /* text-decoration: underline; */
-    letter-spacing: 1px;
-    color: white;
-    transition: 0.25s;
-    background-size: 100% 100%;
+.scroll-top{
+    font-size: 6rem;
+    color: #515252;
+    cursor: pointer;
 }
 
-.project a {
-    background-image: linear-gradient(120deg, #cecece 0%, #1d1d1d 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.1rem;
-    padding: 2px;
-    background-position: 0px 100%;
-    transition: background-size 0.25s ease-in;
-  }
+.scroll-top:hover, 
+.scroll-top:focus {
+    color: #009e91;
+    transition: 0.5s;
+} 
+  
+
 
   /* =========================Tablets and Ipads========================== */
   
