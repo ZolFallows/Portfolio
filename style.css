@@ -235,12 +235,14 @@ p {
     font-size: 6rem;
     color: #515252;
     cursor: pointer;
+    opacity: 0.6;
 }
 
 .scroll-top:hover, 
 .scroll-top:focus {
-    color: #009e91;
+    color: #485c7d;
     transition: 0.5s;
+    opacity: 1;
 } 
   
 
