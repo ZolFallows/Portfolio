@@ -23,6 +23,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 main {
@@ -88,6 +89,7 @@ footer a:hover, footer a:focus {
 } 
 
 #landing {
+    /* position: relative; */
     padding-top: 33vh;
     color: #ffffff;
     min-height: 100vh;
@@ -97,6 +99,12 @@ footer a:hover, footer a:focus {
     background-size: cover;
     text-shadow: 0 0 0.1em #000, 0 0 0.1em #000;
 }
+#sketch-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 
 h1 {
     font-size: 62px;
@@ -171,10 +179,10 @@ p {
     transition: background-size 0.25s ease-in;
 }
 
-.description a:hover, 
-.description a:focus,
-#contact a:hover,
-#contact a:focus {
+div.description a:hover, 
+div.description a:focus,
+div#contact a:hover,
+div#contact a:focus {
     /* letter-spacing: 1px; */
     color: white;
     transition: 0.25s;
